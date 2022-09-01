@@ -14,7 +14,7 @@ const pauseButton = document.getElementById("pause");
   ---------------------*/
 function start() {
   window.onload = function () {
-    setSlidersStyle(config);
+    // setSlidersStyle(config);
 
 
     prevSlideButton.addEventListener("click", () => {
@@ -32,16 +32,6 @@ function start() {
     }
   };
 }
-
-/*  Sets the style of slides based on the number of visible items. */
-function setSlidersStyle(config) {
-  document.querySelector(
-    "style"
-  ).textContent += `@media screen and (min-width:1180px) { .carousel__slide{ min-width: ${
-      100 / config.itemsToBeVisible
-    }% } }`;
-}
-
 /*
    Performs the sliding behavior of items.*/
 function navigate(position, config) {
@@ -69,6 +59,16 @@ function getNewScrollPosition(position, slideContainerEl, slideWidth, config) {
     return x >= 0 ? x : maxScrollLeft;
   }
 }
+
+/*  Sets the style of slides based on the number of visible items. */
+// function setSlidersStyle(config) {
+//   document.querySelector(
+//     "style"
+//   ).textContent += `@media screen and (min-width:1180px) { .carousel__slide{ min-width: ${
+//       100 / config.itemsToBeVisible
+//     }% } }`;
+// }
+
 
 /* AutoplayW*/
 function playCarousel(nextButton, config) {
