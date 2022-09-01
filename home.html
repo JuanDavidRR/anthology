@@ -9,11 +9,13 @@
     <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@700&family=Merriweather:wght@400;700&family=Sintony:wght@400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@700&family=Merriweather:wght@400;700&family=Sintony:wght@400;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
         integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!--CSS Files-->
+    <!--CSS components Files-->
     <link rel="stylesheet" href="./styles/components/navbar.css">
     <link rel="stylesheet" href="./styles/components/carousel.css">
     <link rel="stylesheet" href="./styles/components/news.css">
@@ -30,6 +32,7 @@
 <!--Header-->
 
 <body>
+    <!--navigation-->
     <header class="header" id="top">
         <nav class="navbar__main">
             <ul>
@@ -70,7 +73,8 @@
                         <div class="dropdown-content search">
                             <form>
                                 <input type="text" placeholder="Search...">
-                                <button aria-label="Search button" type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+                                <button aria-label="Search button" type="submit"><i
+                                        class="fa-solid fa-arrow-right"></i></button>
                             </form>
                         </div>
                     </li>
@@ -100,7 +104,9 @@
             </ul>
         </nav>
     </header>
+    <!--navigation-->
 
+    <!--Carrusel-->
     <section class="carousel" id="carousel">
         <div class="carousel__wrapper">
             <div>
@@ -198,9 +204,10 @@
             </div>
         </div>
     </section>
+    <!--Carrusel-->
 
     <main>
-        <!--Carrusel-->
+        <!--News Grid-->
         <section class="news-section container">
             <div>
                 <h2>Current News</h2>
@@ -262,6 +269,9 @@
 
 
         </section>
+        <!--News Grid-->
+
+        <!--Information section-->
         <section class="info-section container">
             <article class="info-section__announcements">
                 <h2>Announcements</h2>
@@ -287,39 +297,42 @@
                 <a class="link" href="/">System of Great Schools Information</a>
             </article>
         </section>
-        <footer class="footer">
-            <section class="contact-section">
-                <hr/>
-                <a href="https://goo.gl/maps/KJiVh6QfwLXJczkT8" target="_blank">3395 Harrison Avenue, Beaumont, TX 77706 </a>
-                <a href="tel:4096175000">Phone: 409-617-5000</a>
-            </section>
-
-            <section class="footer__redirections">
-                <div></div>
-                <a href="" class="btn">SITE MAP</a>
-                <a href="#top" class="btn"><i class="fa-solid fa-angle-up"></i> BACK TO TOP</a>
-            </section>
-            <section class="footer__links">
-                <a href="/">Accreditation </a>
-                <a href="/">Non-Discrimination Policy</a>
-                <a href="/">Newsletter </a>
-                <a href="/">Contact Us</a>
-            </section>
-            <section class="footer__social">
-                <span>Follow Us</span>
-                <ul>
-                    <li><a href="" target="_blank"><img src="./assets/SVG/Social Media/Facebook.svg" alt=""></a></li>
-                    <li><a href="/"><img src="./assets/SVG/Social Media/Twitter.svg" alt=""></a></li>
-                </ul>
-            </section>
-        </footer>
+        <!--Information section-->
     </main>
-    <!--JavaScript File-->
+    <!--Footer section-->
+    <footer class="footer">
+        <section class="contact-section">
+            <hr />
+            <a href="https://goo.gl/maps/KJiVh6QfwLXJczkT8" target="_blank">3395 Harrison Avenue, Beaumont, TX 77706
+            </a>
+            <a href="tel:4096175000">Phone: 409-617-5000</a>
+        </section>
+
+        <section class="footer__redirections">
+            <div></div>
+            <a href="" class="btn">SITE MAP</a>
+            <a href="#top" class="btn"><i class="fa-solid fa-angle-up"></i> BACK TO TOP</a>
+        </section>
+        <section class="footer__links">
+            <a href="/">Accreditation </a>
+            <a href="/">Non-Discrimination Policy</a>
+            <a href="/">Newsletter </a>
+            <a href="/">Contact Us</a>
+        </section>
+        <section class="footer__social">
+            <span>Follow Us</span>
+            <ul>
+                <li><a href="" target="_blank"><img src="./assets/SVG/Social Media/Facebook.svg" alt=""></a></li>
+                <li><a href="/"><img src="./assets/SVG/Social Media/Twitter.svg" alt=""></a></li>
+            </ul>
+        </section>
+    </footer>
+    <!--Footer section-->
+
+    <!--JavaScript Files-->
     <script src="./js/carousel.js"></script>
     <script src="./js/app.js"></script>
     <script src="./js/lazyload.js"></script>
-
-
 </body>
 
 </html>
