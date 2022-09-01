@@ -1,0 +1,83 @@
+/* Start General Selectors and CSS Rules */
+:root {
+    --blue: #1C5687;
+    --hover-blue: #113A55;
+    --text: #333333;
+    --light-gray: #DEDEDE;
+}
+
+* {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+span {
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+}
+
+h1,
+h2 {
+    color: var(--blue);
+    font-weight: bold;
+}
+
+h3,
+a,
+li {
+    font-family: 'Sintony', sans-serif;
+    font-weight: bold;
+}
+
+p {
+    font-family: 'Sintony', sans-serif;
+    color: var(--text);
+    font-size: 16px;
+    line-height: 25px;
+}
+
+button {
+    font-family: 'Merriweather Sans', sans-serif;
+    border: none;
+    color: white;
+    background-color: transparent;
+}
+
+.btn {
+    background-color: var(--hover-blue);
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding: 15px 23px;
+    text-decoration: none !important;
+    transition: 0.4s;
+    border: 1px solid var(--hover-blue);
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: var(--blue);
+    background-color: white;
+}
+
+.container {
+    padding: 4rem 6rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--blue);
+    transition: 0.4s;
+}
+
+a:hover {
+    color: var(--hover-blue);
+    text-decoration: solid underline var(--blue)
+}
+
+/* End General Selectors and CSS Rules */

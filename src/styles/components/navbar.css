@@ -1,0 +1,203 @@
+/* Start Navbar CSS Rules */
+.header {
+    background-color: var(--blue);
+}
+nav.navbar__main {
+    color: white;
+    padding-left: 5rem;
+}
+
+nav.navbar__main ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+}
+
+nav.navbar__main ul div {
+    display: flex;
+    align-items: center;
+}
+
+nav.navbar__main ul li {
+    font-size: 18px;
+    padding: 1.5rem;
+    transition: 0.4s;
+}
+
+nav.navbar__main .navbar__main__leftItems li:hover {
+    background-color: var(--hover-blue);
+}
+
+#hamburguer,
+#btnClose {
+    display: none;
+}
+
+.dropdown-content {
+    display: none !important;
+    position: absolute;
+    top: 73px;
+    padding: 1.5rem;
+    width: 300px;
+    background-color: white;
+    z-index: 1;
+    font-size: 16px;
+    box-shadow: 1px 1px 10px gray;
+}
+
+.dropdown-content.about {
+    width: 300px;
+    left: 11.5rem;
+}
+
+.dropdown-content.schools {
+    width: 260px;
+    margin-left: -8.5rem;
+}
+
+.dropdown-content.search {
+    right: 0;
+    padding: 1.5rem;
+    width: 465px;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-content.search input {
+    width: 85%;
+    padding: 15px 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.dropdown-content.search i {
+    color: var(--blue);
+    font-size: 2rem;
+    vertical-align: middle;
+}
+
+.dropdown-content.search button:hover i {
+    transform: translateX(10px);
+}
+
+.dropdown-content a {
+    display: block;
+    margin: 15px 0;
+}
+
+#search #searchIcon {
+    font-size: 22px;
+    width: 25px;
+    text-align: center;
+    transition: 0.4s;
+}
+
+.dropdown-content a:hover {
+    text-decoration: solid underline var(--blue)
+}
+
+#about:hover .dropdown-content.about {
+    display: block !important;
+}
+
+#schools:hover .dropdown-content.schools {
+    display: block !important;
+}
+
+#search:hover .dropdown-content.search {
+    display: block !important;
+}
+
+.navbar__main__rigthItems li.btn-schools {
+    font-family: 'Merriweather Sans', sans-serif;
+    background-color: var(--light-gray);
+    color: var(--blue);
+    transition: 0.4s;
+    font-weight: bold;
+}
+.navbar__main__rigthItems li.btn-schools i{
+    margin-right: 10px;
+}
+
+.navbar__main__rigthItems li.btn-schools:hover {
+    background-color: var(--hover-blue);
+    color: white;
+}
+
+.navbar__main__rigthItems i {
+    transition: 0.4s;
+}
+
+.navbar__main__rigthItems li.btn-schools:hover i {
+    transform: rotate(90deg);
+}
+
+.navbar__main__rigthItems .btn-search {
+    background-color: transparent;
+    border: none;
+}
+
+.navbar__main__rigthItems #search{
+    background-color: var(--hover-blue);
+    text-align: center;
+}
+
+nav.navbar__secondary {
+    background-color: white;
+    padding: 1rem 6rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav.navbar__secondary .navbar__secondary__logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+nav.navbar__secondary__logo img{
+    width: 100%;
+}
+
+nav.navbar__secondary .navbar__secondary__logo h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.navbar__secondary__logo .logoInfo p {
+    display: block;
+    font-size: 20px;
+    
+}
+
+nav.navbar__secondary ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+nav.navbar__secondary ul li {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--text);
+}
+
+nav.navbar__secondary ul li img {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    transition: 0.4s;
+}
+
+nav.navbar__secondary ul li:hover img {
+    transform: translateY(-7px);
+}
+/* End Navbar CSS Rules */

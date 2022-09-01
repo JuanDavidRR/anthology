@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Header-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@700&family=Merriweather:wght@400;700&family=Sintony:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--CSS Files-->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="/src/styles/components/navbar.css">
+    <link rel="stylesheet" href="/src/styles/components/carousel.css">
+    <link rel="stylesheet" href="/src/styles/components/news.css">
+    <link rel="stylesheet" href="/src/styles/components/info.css">
+    <link rel="stylesheet" href="/src/styles/components/contact.css">
+    <link rel="stylesheet" href="/src/styles/components/footer.css">
+    <!--Default CSS test (Desktop )-->
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <!--Styles for Mobile devices (320px-639px)-->
+    <link rel="stylesheet" href="./styles/mobile.css" />
+    <!--Styles for tablets (640px-1023px)-->
+    <link rel="stylesheet" href="./styles/tablet.css" />
+    <title>Anthology Test</title>
+</head>
+<!--Header-->
+
+<body>
+    <header class="header" id="top">
+        <nav class="navbar__main">
+            <ul>
+                <li id="hamburguer">
+                    <button aria-label="Close menu" id="btnOpen">
+                        <img src="../assets/SVG/Hamburger Menu.svg" alt="">MENU
+                    </button>
+                </li>
+                <div id="menu-display" class="navbar__main__leftItems">
+                    <button aria-label="Close Menu" id="btnClose"><i class="fa-solid fa-xmark"></i></button>
+                    <li>
+                        Home</li>
+                    <li id="about">About
+                        <div class="dropdown-content about">
+                            <a href="#">General Information</a>
+                            <a href="#">Lake Park History</a>
+                            <a href="#">In the News</a>
+                            <a href="#">Contact Us</a>
+                        </div>
+                    </li>
+
+                    <li>Departments</li>
+                    <li>Programs</li>
+                    <li>Board</li>
+                    <li>Families</li>
+                    <li>Staf</li>
+                </div>
+                <div class="navbar__main__rigthItems">
+                    <li id="schools" class="btn-schools"><i class="fa-solid fa-angle-right"></i>SCHOOLS
+                        <div class="dropdown-content schools">
+                            <a href="#">Lake Park Elementary</a>
+                            <a href="#">Lake Park Middle School</a>
+                            <a href="#">Lake Park High School </a>
+                        </div>
+                    </li>
+                    <li id="search">
+                        <i id="searchIcon" class="fa-solid fa-magnifying-glass"></i>
+                        <div class="dropdown-content search">
+                            <form>
+                                <input type="text" placeholder="Search...">
+                                <button aria-label="Search button" type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+                            </form>
+                        </div>
+                    </li>
+                </div>
+
+            </ul>
+        </nav>
+        <nav class="navbar__secondary">
+            <div class="navbar__secondary__logo">
+                <img src="../assets/logo.png" alt="Lake Park School District" />
+                <div class="logoInfo">
+                    <h1>Lake Park School District</h1>
+                    <p>Let’s Advance Learning</p>
+                </div>
+            </div>
+            <ul>
+                <li>
+                    <img src="../assets/SVG/Global Icons/Envelope 5.svg" alt="">
+                    Contact Us
+                </li>
+                <li>
+                    <img src="../assets/SVG/Global Icons/Bus.svg" alt="">
+                    Bus Routes</li>
+                <li>
+                    <img src="../assets/SVG/Global Icons/Calendar 6.svg" alt="">
+                    Events</li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="carousel" id="carousel">
+        <div class="carousel__wrapper">
+            <div>
+                <div class="carousel__content">
+                    <div class="carousel__container">
+                        <div class="carousel__slide">
+                            <div class="card">
+                                <div class="card__inner">
+                                    <div class="card__image">
+                                        <img class="lazy" data-src="../assets/Main/Main.jpg"
+                                            data-srcset="../assets/Main/Main.jpg" alt="Teachear teaching in classroom">
+                                    </div>
+                                    <div class="card__description">
+                                        <h2>Welcome to Our Site!</h2>
+                                        <p>Ullamcorper arcu ante duis mus condimentum dapibus ullamcorper venenatis
+                                            torquent parturient condimentum facilisis diam lacinia.</p>
+                                        <a class="btn" href="/">LEARN MORE</a>
+                                        <div class="back-image first"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel__slide">
+                            <div class="card">
+                                <div class="card__inner">
+                                    <div class="card__image">
+                                        <img class="lazy" data-src="../assets/Main/Soccer.jpg"
+                                            data-srcset="../assets/Main/Soccer.jpg" alt="Soccer ball in the field">
+                                    </div>
+                                    <div class="card__description">
+                                        <h2>Welcome to slide #2</h2>
+                                        <p>Ullamcorper arcu ante duis mus condimentum dapibus ullamcorper venenatis
+                                            torquent parturient condimentum facilisis diam lacinia.</p>
+                                        <a class="btn" href="/">LEARN MORE</a>
+                                        <div class="back-image second"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel__slide">
+                            <div class="card">
+                                <div class="card__inner">
+                                    <div class="card__image">
+                                        <img class="lazy"
+                                            data-src="https://i.cbc.ca/1.6276172.1649354521!/fileImage/httpImage/image.jpg_gen/derivatives/16x9_780/1237045568.jpg"
+                                            data-srcset="https://i.cbc.ca/1.6276172.1649354521!/fileImage/httpImage/image.jpg_gen/derivatives/16x9_780/1237045568.jpg"
+                                            alt="Kids reading books">
+
+                                    </div>
+                                    <div class="card__description">
+                                        <h2>Welcome to slide #3</h2>
+                                        <p>Ullamcorper arcu ante duis mus condimentum dapibus ullamcorper venenatis
+                                            torquent parturient condimentum facilisis diam lacinia.</p>
+                                        <a class="btn" href="/">LEARN MORE</a>
+                                        <div class="back-image third"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel__slide">
+                            <div class="card">
+                                <div class="card__inner">
+                                    <div class="card__image">
+                                        <img class="lazy"
+                                            data-src="https://ca-times.brightspotcdn.com/dims4/default/9c3e3db/2147483647/strip/true/crop/6720x4480+0+0/resize/1486x991!/quality/90/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Ff0%2F8b%2F0d765a7444a2ac00ad2165db1d86%2Fvirus-outbreak-california-schools-80091.jpg"
+                                            data-srcset="https://ca-times.brightspotcdn.com/dims4/default/9c3e3db/2147483647/strip/true/crop/6720x4480+0+0/resize/1486x991!/quality/90/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Ff0%2F8b%2F0d765a7444a2ac00ad2165db1d86%2Fvirus-outbreak-california-schools-80091.jpg"
+                                            alt="¡Soy una imagen!">
+                                    </div>
+                                    <div class="card__description">
+                                        <h2>Welcome to slide #4</h2>
+                                        <p>Ullamcorper arcu ante duis mus condimentum dapibus ullamcorper venenatis
+                                            torquent parturient condimentum facilisis diam lacinia.</p>
+                                        <a class="btn" href="/">LEARN MORE</a>
+                                        <div class="back-image fourth"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-carousel">
+                        <div id="prev-slide" class=" btn arrow arrow--left">
+                            <i class="fa-solid fa-angle-left"></i>
+                        </div>
+                        <div id="pause" class="btn arrow pause">
+                            <i class="fa-solid fa-pause"></i>
+                        </div>
+                        <div id="next-slide" class=" btn arrow arrow--right">
+                            <i class="fa-solid fa-angle-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <!--Carrusel-->
+        <section class="news-section container">
+            <div>
+                <h2>Current News</h2>
+                <button aria-label="More news" class="btn">MORE</button>
+            </div>
+            <section class="news-section__items">
+                <article class="news-section__article">
+                    <figure>
+                        <img class="lazy"
+                            data-src="../assets/News Images/187150362_4167305129957011_4787881228705621978_n.jpg"
+                            data-srcset="../assets/News Images/187150362_4167305129957011_4787881228705621978_n.jpg"
+                            alt="¡Soy una imagen!">
+                    </figure>
+                    <h3>Student Book Fair</h3>
+                    <p>
+                        Ullamcorper arcu ante duis mus condimentum dapibus ullamcorper venenatis torquent parturient
+                        condimentum facilisis diam lacinia.
+                    </p>
+                </article>
+
+                <article class="news-section__article">
+                    <figure>
+                        <img class="lazy" data-src="../assets/News Images/kimberly-farmer-287677-unsplash.jpg"
+                            data-srcset="../assets/News Images/kimberly-farmer-287677-unsplash.jpg"
+                            alt="¡Soy una imagen!">
+                    </figure>
+                    <h3>Student Book Fair</h3>
+                    <p>
+                        Venenatis feugiat velit blandit aliquam nullam lectus odio a ut suspendisse ullamcorper
+                        parturient nascetur lobortis.
+                    </p>
+                </article>
+
+                <article class="news-section__article">
+                    <figure>
+                        <img class="lazy" data-src="../assets/News Images/bus-878697_1920.jpg"
+                            data-srcset="../assets/News Images/bus-878697_1920.jpg" alt="¡Soy una imagen!">
+                    </figure>
+                    <h3>Student Book Fair</h3>
+                    <p>
+                        Leo aenean elementum senectus ut tincidunt conubia nec a metus parturient volutpat venenatis.
+                    </p>
+                </article>
+
+                <article class="news-section__article">
+                    <figure>
+                        <img class="lazy"
+                            data-src="../assets/News Images/186027642_4150830851604439_2713297670727753817_n.jpg"
+                            data-srcset="../assets/News Images/186027642_4150830851604439_2713297670727753817_n.jpg"
+                            alt="¡Soy una imagen!">
+                    </figure>
+                    <h3>Student Book Fair</h3>
+                    <p>
+                        Ad dapibus parturient consectetur nec aptent aenean metus ullamcorper et nisi pulvinar lectus
+                        nisi suscipit pulvinar vestibulum malesuada.
+                    </p>
+                </article>
+            </section>
+
+
+        </section>
+        <section class="info-section container">
+            <article class="info-section__announcements">
+                <h2>Announcements</h2>
+                <p>Lacinia interdum hac luctus suspendisse odio ridiculus blandit suspendisse vestibulum montes ad
+                    condimentum mus metus scelerisque a vestibulum lobortis potenti condimentum scelerisque
+                    pulvinar.</p>
+                <p>Tellus proin elit litora nisi a varius lacus ullamcorper placerat ridiculus sit eros id dignissim
+                    a
+                    aliquet</p>
+                <p>Augue sodales ullamcorper facilisis elit vestibulum adipiscing a laoreet eros vestibulum ut
+                    vivamus a turpis justo in vestibulum phasellus et odio sed ad leo.</p>
+
+                <button aria-label="More Announcements" class="btn">MORE</button>
+            </article>
+
+            <article class="info-section__shortcuts">
+                <h2>Site Shortcuts</h2>
+                <a class="link" href="/">Tip Line</a>
+                <a class="link" href="/">Stay Informed - Weekly e-Newsletter</a>
+                <a class="link" href="/">Stay Informed - Weekly e-Newsletter</a>
+                <a class="link" href="/">Report Bullying</a>
+                <a class="link" href="/">Child Find - Information About Special Education Services</a>
+                <a class="link" href="/">System of Great Schools Information</a>
+            </article>
+        </section>
+        <footer class="footer">
+            <section class="contact-section">
+                <hr/>
+                <a href="https://goo.gl/maps/KJiVh6QfwLXJczkT8" target="_blank">3395 Harrison Avenue, Beaumont, TX 77706 </a>
+                <a href="tel:4096175000">Phone: 409-617-5000</a>
+            </section>
+
+            <section class="footer__redirections">
+                <div></div>
+                <a href="" class="btn">SITE MAP</a>
+                <a href="#top" class="btn"><i class="fa-solid fa-angle-up"></i> BACK TO TOP</a>
+            </section>
+            <section class="footer__links">
+                <a href="/">Accreditation </a>
+                <a href="/">Non-Discrimination Policy</a>
+                <a href="/">Newsletter </a>
+                <a href="/">Contact Us</a>
+            </section>
+            <section class="footer__social">
+                <span>Follow Us</span>
+                <ul>
+                    <li><a href="" target="_blank"><img src="../assets/SVG/Social Media/Facebook.svg" alt=""></a></li>
+                    <li><a href="/"><img src="../assets/SVG/Social Media/Twitter.svg" alt=""></a></li>
+                </ul>
+            </section>
+        </footer>
+    </main>
+    <!--JavaScript File-->
+    <script src="../src/js/app.js"></script>
+    <script src="../src/js/carousel.js"></script>
+    <script src="../src/js/lazyload.js"></script>
+</body>
+
+</html>

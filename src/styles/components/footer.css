@@ -1,0 +1,78 @@
+/* Start footer CSS Rules */
+
+.footer .footer__links {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.footer .footer__links a {
+    border-right: 1px solid var(--text);
+    padding: 0 1rem;
+    margin: 0 auto;
+    font-weight: bold;
+}
+.footer .footer__links a:last-child{
+    border: 0;
+}
+
+.footer .footer__redirections {
+    text-align: center;
+    margin: 4rem 0;
+}
+
+.footer .footer__redirections div {
+    width: 100%;
+    background-color: var(--text);
+    height: 1px;
+    position: relative;
+    top: 10px;
+    z-index: -1;
+}
+
+.footer .footer__redirections .btn {
+    margin: 0 5px;
+}
+
+.footer .footer__social {
+    display: flex;
+    background-color: var(--blue);
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    height: 80px;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+}
+
+.footer .footer__social li {
+    display: inline-block;
+    margin: 0 1rem;
+    transition: 0.4s;
+}
+
+.footer__social li:hover{
+    transform: translateY(-5px);
+}
+
+/* Start contact info section CSS Rules */
+.contact-section {
+    margin: 3rem 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.contact-section hr{
+    display: none;
+}
+
+.contact-section a {
+    font-size: 20px;
+    display: inline-block;
+}
+
+.footer .contact-section a:nth-child(2) {
+    border-right: 1px solid var(--text);
+    padding-right: 2rem;
+}

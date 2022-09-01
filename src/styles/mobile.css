@@ -1,0 +1,200 @@
+@media (max-width: 1023px) {
+
+    #hamburguer, #btnClose{
+        display: block;
+    }
+
+    #hamburguer{
+        padding: 0 3rem;
+    }
+
+    #btnClose{
+        font-size: 22px;
+        transition: 0.4s;
+        position: absolute;
+        right: 2rem;
+        top: 2rem;
+    }
+    #btnClose:hover{
+        transform: rotate(180deg);
+    }
+
+    nav.navbar__main {
+        padding: 0rem;
+    }
+
+    #schools {
+        display: none;
+    }
+
+    .navbar__main__leftItems {
+        flex-direction: column;
+        height: 100vh;
+        z-index: 10;
+        gap: 2rem;
+        width: 70%;
+        background-color: var(--blue);
+        top: 0;
+        padding-top: 5rem;
+        position: fixed;
+        transform: translateX(-100%);
+        transition: 0.4s;
+        border-right: 2px white solid;
+    }
+
+    .active {
+        transform: translateX(0);
+    }
+
+    nav.navbar__secondary ul {
+        display: none;
+    }
+
+    #hamburguer button {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        color: white;
+        font-size: 16px;
+    }
+
+    .carousel_ {
+        height: auto;
+    }
+
+    .card__inner {
+        display: block;
+    }
+    .card__inner .card__description {
+        height: auto;
+        width: 100%;
+        background-color: var(--blue);
+        margin-top: -5px;
+        padding: 2rem 3rem;
+    }
+    .card__inner .card__description p {
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    .card__inner .card__description .btn{
+        background-color: white;
+        color: var(--blue);
+    }
+    .card__description .back-image {
+        display: none;
+    }
+
+    .arrow{
+        width: auto;
+        height: auto;
+    }
+
+    .contact-section{
+        display: block;
+    }
+
+    .contact-section a {
+        display: block;
+        text-align: center;
+        padding: 1rem 0 0;
+        border: none;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .footer .contact-section a:nth-child(2) {
+        border-right: none;
+        padding-right: none;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 649px) {
+
+    .dropdown-content.search {
+        width: 100%;
+        margin-left: -20rem;
+    }
+
+    .dropdown-content.search input {
+        width: 80%;
+    }
+
+    nav.navbar__secondary .navbar__secondary__logo {
+        display: block;
+        text-align: center;
+    }
+
+    nav.navbar__secondary {
+        padding: 1rem;
+        display: block;
+    }
+
+    .card__inner .card__image img {
+        height: 230px;
+    }
+
+    .card__inner .card__description{
+        text-align: center;
+        padding: 2rem;
+    }
+
+    .card__description .btn{
+        margin: 0 auto;
+    }
+
+    .btn-carousel {
+        bottom: 57%;
+        left: 30%;
+    }
+
+    .btn.arrow{
+        padding: 10px 15px;
+    }
+
+
+    .info-section {
+        display: block;
+        background-color: transparent;
+    }
+
+    .info-section article {
+        padding: 0;
+        border: none;
+        margin: 2rem 0;
+    }
+
+    .news-section .news-section__items {
+        display: block;
+    }
+
+    .news-section div {
+        display: block;
+    }
+
+    .news-section button {
+        margin-top: 1rem;
+    }
+
+    .news-section .news-section__items .news-section__article {
+        margin: 3rem 0;
+    }
+
+    .footer .footer__links a {
+        border: 0;
+        display: block;
+        margin: 15px 0;
+    }
+
+    .contact-section hr{
+        display: block;
+        height: 8px;
+        margin-bottom: 2rem;
+        background-color: var(--blue);
+    }
+
+    .container {
+        margin: 1.5rem;
+        padding: 0;
+    }
+}

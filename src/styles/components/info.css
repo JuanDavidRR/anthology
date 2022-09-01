@@ -1,0 +1,63 @@
+
+
+/* Start News section CSS Rules */
+.news-section div {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0;
+}
+
+.news-section h2 {
+    font-size: 36px;
+}
+
+
+/* End News section CSS Rules */
+
+/* Start Information section CSS Rules */
+.info-section {
+    background-color: var(--blue);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    justify-content: space-evenly;
+}
+
+.info-section article {
+    flex: 1;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 4px;
+}
+
+.info-section h2 {
+    line-height: 3rem;
+    font-size: 26px;
+}
+
+.info-section .info-section__announcements p {
+    border-bottom: 1px solid var(--text);
+    padding-bottom: 10px;
+    margin: 15px 0;
+}
+
+.info-section__announcements p:nth-child(4) {
+    border-bottom: none;
+}
+
+.info-section button {
+    margin: 5px 0;
+}
+
+.info-section .info-section__shortcuts a {
+    display: block;
+    border-bottom: 1px solid var(--text);
+    padding-bottom: 13px;
+    margin: 13px 0;
+}
+
+.info-section .info-section__shortcuts a:hover {
+    border-bottom: 4px solid var(--blue);
+    text-decoration: none;
+}
+/* End Information section CSS Rules */

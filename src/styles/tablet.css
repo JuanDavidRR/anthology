@@ -1,0 +1,36 @@
+@media (min-width: 640px) and (max-width: 1023px) {
+
+    .navbar__main__leftItems{
+        width: 40%;
+    }
+
+    .dropdown-content.about {
+        width: 300px;
+        left: 80%;
+    }
+
+    .card__inner .card__image img {
+        height: 430px;
+        width: 100%;
+    }
+
+    .btn-carousel {
+        bottom: 37%;
+        right: 5%;
+        left: auto;
+    }
+
+
+    .news-section .news-section__items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .info-section {
+        flex-direction: column;
+    }
+
+    .container {
+        padding: 3rem;
+    }
+}

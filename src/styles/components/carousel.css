@@ -1,0 +1,143 @@
+
+/* Start Carousel CSS Rules */
+.carousel__content {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.carousel__container {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+}
+
+.carousel__container::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel__slide {
+    min-width: 100%;
+}
+
+.card__inner {
+    display: flex;
+}
+
+.card__description {
+    flex: 1;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem;
+    background-color: #113a55c5;
+}
+
+.card__description .back-image {
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 40%;
+    opacity: 0.5;
+    height: 99%;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: right;
+    background-position: center;
+    z-index: -1;
+}
+
+.card__description .back-image.first {
+    background-image: url('../../../assets/Main/Soccer.jpg');
+}
+
+.card__description .back-image.second {
+    background-image: url('https://i.cbc.ca/1.6276172.1649354521!/fileImage/httpImage/image.jpg_gen/derivatives/16x9_780/1237045568.jpg');
+}
+
+.card__description .back-image.third {
+    background-image: url("https://ca-times.brightspotcdn.com/dims4/default/9c3e3db/2147483647/strip/true/crop/6720x4480+0+0/resize/1486x991!/quality/90/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Ff0%2F8b%2F0d765a7444a2ac00ad2165db1d86%2Fvirus-outbreak-california-schools-80091.jpg");
+}
+
+.card__description .back-image.fourth {
+    background-image: url('../../../assets/Main/Main.jpg');
+}
+
+.card__description .btn {
+    width: 160px;
+}
+
+.card__inner p {
+    margin: 2rem 0 3rem;
+    width: 80%;
+    color: white;
+}
+
+.card__description h2 {
+    color: white;
+    font-size: 28px;
+}
+
+.card__image{
+    flex: 2;
+}
+.card__image img {
+    width: 100%;
+    height: 650px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.btn-carousel {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    gap: 0.5rem;
+    bottom: 1.5rem;
+    left: 53%;
+}
+
+.btn-carousel .btn{
+    padding: 15px;
+}
+
+.btn.arrow{
+    background-color: #1c5787e9;
+    border: none;
+    border: #1c5787e0 solid 2px;
+}
+.arrow {
+    width: 35px;
+    height: 35px;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.arrow i {
+    font-size: 1rem;
+    color: #fff;
+}
+
+.arrow:hover i {
+    color: var(--blue);
+}
+
+@media screen and (min-width: 1180px) {
+
+    .carousel__slide {
+        scroll-snap-align: center;
+        position: relative;
+    }
+
+    .arrow {
+        display: flex;
+    }
+}
+/* End Carousel CSS Rules */

@@ -1,0 +1,36 @@
+.news-section .news-section__items {
+    display: flex;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+
+
+.news-section__items article {
+    flex: 1;
+}
+
+.news-section__items article h3 {
+    line-height: 3rem;
+    font-size: 23px;
+    color: var(--blue);
+}
+
+.news-section__items article img {
+    width: 100%;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.news-section__items article:hover img {
+    transform: scale(1.1);
+}
+
+.news-section__items article:hover h3{
+    text-decoration: solid underline var(--blue)
+
+}
+
+.news-section__items figure {
+    max-width: 100%;
+    overflow: hidden;
+}
